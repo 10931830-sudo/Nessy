@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nessyglow</title>
+    <style>
+        img { max-width: 100%; height: auto; }
+        /* Navigation bar (stays at the top while scrolling) */
+        nav { position: sticky; top: 0; z-index: 10; background-color: bisque; padding: 10px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+        nav a { color: #5a1f1f; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        /* Readable panel on top of the background image */
+        main { background-color: rgba(255, 255, 255, 0.88); max-width: 900px; margin: 15px auto; padding: 15px 20px; border-radius: 10px; }
+        /* Photos */
+        .about-photos, .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+        .about-photos img { width: 200px; height: 260px; object-fit: cover; border-radius: 8px; }
+        .gallery img { width: 180px; height: 240px; object-fit: cover; border-radius: 8px; }
+        /* Price table */
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #5a1f1f; padding: 8px; text-align: left; }
+        th { background-color: bisque; }
+        caption { font-weight: bold; padding: 6px; }
+    </style>
+</head>
+<body style="background-image: url('images/BG-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;">
+
+<!-- ========== NAVIGATION ========== -->
+<nav>
+    <a href="Index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#prices">Services &amp; Prices</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="Booking.html">Book Now</a>
+</nav>
+
+<main>
+
+<!-- ========== ABOUT SECTION ========== -->
+<section id="about">
+    <h1 style="background-color: rgba(255, 228, 196, 0.916);">About Nessyglow</h1>
+    <hr>
+    <p><b>Nessyglow</b> is a beauty brand created to help every woman feel confident, beautiful, and comfortable in her own skin.</p>
+
+    <!-- Photos of Nessyglow's CEO -->
+    <div class="about-photos">
+        <img src="images/Self_Image-1.jpeg" alt="Nessyglow owner">
+        <img src="images/Self_Image-3.jpg" alt="Nessyglow CEO smiling softly">
+        <img src="images/Self_Image-4.jpg" alt="Nessyglow CEO with curly braided hair">
+        <img src="images/Self_Image-2.jpg" alt="Nessyglow CEO in a denim jacket">
+    </div>
+
+    <h2 style="background-color: bisque;">Meet the CEO</h2>
+    <p>Nessyglow is led by its CEO, a makeup artist who believes that <i>good makeup brings brighter days</i>. Every client is treated as an individual: skin tone, features, outfit and personality all shape the final look.</p>
+
+    <h2 style="background-color: bisque;">Our Mission</h2>
+    <p>Our slogan says it best: <b>"More than makeup, a more confident you."</b> We want you to leave your appointment feeling like the best version of yourself, not like someone else.</p>
+
+    <h2 style="background-color: bisque;">Why Choose Nessyglow?</h2>
+    <ul>
+        <li>Beauty in every detail: careful, clean and neat application</li>
+        <li>Looks for every moment, from natural to full glam and weddings</li>
+        <li>Studio or home service, whichever suits you</li>
+        <li>Friendly, relaxed sessions where your ideas are heard</li>
+    </ul>
+
+    <h2 style="background-color: bisque;">Functions of Nessyglow</h2>
+    <p>Professional makeup services <br>Bridal and special-event makeup <br>Personalized beauty looks <br>Beauty content and inspiration <br>Enhancing natural beauty and confidence.</p>
+</section>
+
+<!-- ========== SERVICES & PRICES ========== -->
+<section id="prices">
+    <h2 style="background-color: bisque;">AVAILABLE MAKEUP SERVICES</h2>
+    <ol>
+        <li>Natural Makeup</li>
+        <li>Soft Glam</li>
+        <li>Full Glam</li>
+        <li>White Wedding</li>
+        <li>Traditional Glam</li>
+        <li>Makeup + Trial</li>
+    </ol>
+
+    <!-- Price table (values from the NKS Beauty price list) -->
+    <table>
+        <caption>NKS Beauty &ndash; Makeup Price List</caption>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Price (Studio)</th>
+                <th>Home Service</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Natural Makeup</td><td>GH&#8373;200</td><td>GH&#8373;400</td></tr>
+            <tr><td>Soft Glam</td><td>GH&#8373;250</td><td>GH&#8373;450</td></tr>
+            <tr><td>Full Glam</td><td>GH&#8373;300</td><td>GH&#8373;500</td></tr>
+            <tr><td>White Wedding</td><td>GH&#8373;400</td><td>GH&#8373;600</td></tr>
+            <tr><td>Traditional Glam</td><td>GH&#8373;500</td><td>GH&#8373;700</td></tr>
+            <tr><td>Makeup + Trial</td><td>GH&#8373;800</td><td>GH&#8373;1,000</td></tr>
+        </tbody>
+    </table>
+    <p><i>Beauty in every detail. Beauty &bull; Enhance &bull; Empower You.</i></p>
+
+    <a href="Booking.html#book-form"><button>Click Here to Book</button></a>
+</section>
+
+<!-- ========== GALLERY (selection of looks; the full gallery is on the booking page) ========== -->
+<section id="gallery">
+    <h2 style="background-color: bisque;">Our Looks</h2>
+    <div class="gallery">
+        <img src="images/117.jpg" alt="Soft glam with sleek updo" loading="lazy">
+        <img src="images/118.jpg" alt="Orange eyeshadow with burgundy wavy hair" loading="lazy">
+        <img src="images/124.jpg" alt="Smoky blue glam with long wavy ponytail" loading="lazy">
+        <img src="images/127.jpg" alt="Neutral glam with sleek bun" loading="lazy">
+        <img src="images/121.jpg" alt="Side profile of bridal-style updo" loading="lazy">
+        <img src="images/112.jpg" alt="Soft glam portrait" loading="lazy">
+    </div>
+    <p><a href="Booking.html#gallery">See the full gallery &rarr;</a></p>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact">
+    <h3 style="background-color: bisque;">Contact Detail</h3>
+    <hr>
+    <p>Name: Nessyglow <br> Tel / WhatsApp: 0597309232 <br> Email: nessysmakeup04@gmail.com <br> TikTok &amp; Instagram: nks.beauty2</p>
+
+    <!-- Map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.294904774195!2d-0.1893347999999584!3d5.670432999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c5ee301f579%3A0xa3a82665183839c!2sWisconsin%20International%20University%20College%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1789651692325!5m2!1sen!2sgh" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><br>
+
+    <!-- Video -->
+    <iframe width="250" height="250" src="https://www.youtube.com/embed/41FToUydIiw?si=emZGB3xJcuVwo5fp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br><br>
+    <a href="Booking.html#book-form"><button>Click Here to Book</button></a>
+</section>
+
+</main>
+</body>
+</html>
